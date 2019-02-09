@@ -1,0 +1,43 @@
+/* Colors
+
+#90AFC5 mist
+#336B87 stone -> .name-in-header, h2
+#2A3132 shadow -> body, a
+#763626 autumn foliage -> a:hover
+
+-------------------*/
+
+/* Fonts 
+-------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Oswald:500');
+
+/* Global Styles
+-------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+
+/* 
+Headers and Footers
+-------------------*/
