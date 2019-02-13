@@ -162,3 +162,33 @@ index.html
 #sig{
     text-align: right;
 }
+
+/* 
+contact.html
+------------------------*/
+
+.contact-form {
+    min-width: 960px;
+    max-width: 1024px;
+}
+
+input, label {
+    margin: 20px;
+}
+
+input[type=text] {
+    width: 960px;
+}
+
+input[type=submit] {
+    color: #ededed;
+    background: #336B87;
+    border: 0;
+    /* padding: 12px; */
+    width: 100px;
+    height: 25px;
+}
+
+#message {
+    padding-bottom: 50px;
+}
