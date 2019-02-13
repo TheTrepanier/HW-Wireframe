@@ -4,6 +4,7 @@
 #336B87 stone -> .name-in-header, h2
 #2A3132 shadow -> body, a
 #763626 autumn foliage -> a:hover
+#ededed white-ish -> background
 
 -------------------*/
 
@@ -21,6 +22,8 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #ededed;
+    color: #2A3132;
     margin: 0;
 }
 
@@ -29,15 +32,111 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 2em;
+    padding: 0;
+    text-align: center;
 }
 
 h2 {
-    font-size: 40px;
-    margin: 0;
+    font-size: 1.5em;
+    color: #336B87;
+}
+
+a {
+    color: #2A3132;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #763626;
 }
 
 
 /* 
 Headers and Footers
 -------------------*/
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background: #ffffff;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #2A3132;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.masthead {
+    background: #336b87;
+    color: #ededed;
+    max-width: 250px;
+}
+
+.wrapper {
+    /* background: pink; */
+    padding-top: 1.5em;
+    text-align: center;
+    min-width: 250px;
+}
+
+nav {
+    font-size: 1.2em;
+}
+
+nav > li {
+    display: inline-block;
+    border-right: 1px solid #2A3132;
+    padding: 0.25em;
+}
+
+nav li:last-child {
+    border: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 
+index.html
+-------------------*/
+
+.profile-image {
+    max-width: 200px;
+    float: left;
+    margin: 0.8em;
+}
+
+.main-section {
+    max-width: 1024px;
+    margin: auto;
+    background: #ffffff;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-section-header {
+    margin: 20px;
+}
+
+.about-me-text {
+    margin: 25px;
+}
+
+.signature {
+    margin: 25px;
+}
+
+#sig{
+    text-align: right;
+}
